@@ -149,20 +149,27 @@
 
 <section id="programare">
     <h2>Programare Online</h2>
-    <form>
-        <input type="text" placeholder="Nume complet" required>
-        <input type="tel" placeholder="Telefon" required>
-        <input type="date" required>
-        <textarea placeholder="Mesaj sau serviciul dorit"></textarea>
-        <button type="submit" class="btn">Trimite</button>
-    </form>
+   <form action="https://formsubmit.co/nailradiancee@gmail.com" method="POST">
+    <input type="text" name="Nume" placeholder="Nume complet" required>
+    <input type="email" name="Email" placeholder="Email" required>
+    <input type="date" name="Data" required>
+    <textarea name="Mesaj" placeholder="Mesaj sau serviciul dorit"></textarea>
+
+    <!-- dezactivează captcha -->
+    <input type="hidden" name="_captcha" value="false">
+
+    <!-- redirect după trimitere -->
+    <input type="hidden" name="_next" value="https://google.com">
+
+    <button type="submit" class="btn">Trimite</button>
+</form>
 </section>
 
 <section id="contact">
     <h2>Contact</h2>
     <p>📍 Str. Frumuseții 25, București</p>
-    <p>📞 07xx xxx xxx</p>
-    <p>📧 contact@nailelegance.ro</p>
+    <p>📞 0735 625 157</p>
+    <p>📧 contact nailradiancee@gmail.com</p>
     <p>Program: L-V 10:00–20:00 | S 10:00–18:00</p>
 </section>
 
