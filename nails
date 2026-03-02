@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nail Elegance Studio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+        }
+
+        header {
+            background-color: #f8c8dc;
+            padding: 15px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1604654894610-df63bc536371') no-repeat center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #f8c8dc;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .services {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #f8f8f8;
+            padding: 20px;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        form {
+            max-width: 400px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        input, textarea {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Nail Elegance Studio</h1>
+    <nav>
+        <a href="#despre">Despre</a>
+        <a href="#servicii">Servicii</a>
+        <a href="#programare">Programare</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h2>Frumusețe. Profesionalism. Răsfăț.</h2>
+    <a href="#programare" class="btn">Programează-te acum</a>
+</div>
+
+<section id="despre">
+    <h2>Despre Noi</h2>
+    <p>Suntem o clinică profesională de unghii dedicată frumuseții și îngrijirii mâinilor și picioarelor tale. Folosim produse premium și respectăm cele mai stricte norme de igienă.</p>
+</section>
+
+<section id="servicii">
+    <h2>Serviciile Noastre</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Manichiură</h3>
+            <p>Clasică – 80 lei</p>
+            <p>Semipermanentă – 120 lei</p>
+        </div>
+        <div class="card">
+            <h3>Pedichiură</h3>
+            <p>Cosmetică – 100 lei</p>
+            <p>Cu gel – 150 lei</p>
+        </div>
+        <div class="card">
+            <h3>Nail Art</h3>
+            <p>Design simplu – 30 lei</p>
+            <p>Design premium – 60+ lei</p>
+        </div>
+    </div>
+</section>
+
+<section id="programare">
+    <h2>Programare Online</h2>
+    <form>
+        <input type="text" placeholder="Nume complet" required>
+        <input type="tel" placeholder="Telefon" required>
+        <input type="date" required>
+        <textarea placeholder="Mesaj sau serviciul dorit"></textarea>
+        <button type="submit" class="btn">Trimite</button>
+    </form>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>📍 Str. Frumuseții 25, București</p>
+    <p>📞 07xx xxx xxx</p>
+    <p>📧 contact@nailelegance.ro</p>
+    <p>Program: L-V 10:00–20:00 | S 10:00–18:00</p>
+</section>
+
+<footer>
+    © 2026 Nail Elegance Studio | Toate drepturile rezervate
+</footer>
+
+</body>
+</html>
